@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Currentz">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" >
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Currentz</title>
+
+</head>
+<body class="side-panel-light has-loading-screen color-theme-monochrome">
+
+    <!--PAGE-->
+
+	<div id="page">
+		<div class="page-wrapper">
+			<figure class="page-wrapper-inner">
+				<div class="base-layer dark-overlay">
+                    <div id="triangles"></div>
+                </div>
+				<!--end layer-->
+                <div class="layer animate pointer-events-none" data-background-image="assets/img/triangles.png"></div>
+				<!--end layer-->
+				<div class="layer animate">
+					<div id="content">
+						<div class="content-wrapper">
+							<div class="container">
+                                <img src="assets/img/logo.svg" alt="">
+                                <!--end brand-->
+                                
+								<div class="heading">
+									<h1>We are busy cooking something up!</h1>
+								</div>
+								<!--end heading-->
+							</div>
+							<!--end container-->
+						</div>
+						<!--end content-wrapper-->
+					</div>
+					<!--end content-->
+				</div>
+				<!--end layer-->
+			</figure>
+			<!--end cd-floating-background-->
+		</div>
+		<!--end cd-background-wrapper-->
+	</div>
+	<!--end page-->
+
+	<script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/pace.min.js"></script>
+	<script src="assets/js/trianglify.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+	<script type="text/javascript">
+
+        var pattern = Trianglify({
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
+        $("#triangles").append(pattern.canvas());
+
+	</script>
+
+</body>
+</html>
